@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p onclick="func(this)">hello P</p>
+
+<div>hello DIV</div>
+<script>
+    <!--绑定事件方式1-->
+    function func(self){
+    console.log(self)
+    alert(1234)
+    }
+
+    <!--绑定事件方式2-->
+    var ele=document.getElementsByTagName("div")[0]
+    ele.on click=function(){
+    console.log(this);
+    }
+
+
+</script>
+</body>
+</html>
